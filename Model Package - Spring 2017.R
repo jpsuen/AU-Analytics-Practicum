@@ -65,9 +65,12 @@ process_data <- function(file) {
 # Read the data and save as var: data
 if (!"RESP" %in% names(data)){
   data <- process_data(PATH_TO_DATA)
-  to_factor <- c("Zip", "Zip4", "V13")
-  for (i in to_factor) {
-    data[[i]] <- as.numeric(data[[i]])
+  to_numeric <- c("Zip", "Zip4", "V13")
+  for (i in names(data)) {
+    if (class(data[[i]]) == "integer" || i %in% to_numeric) {
+      data[[i]] <- as.numeric(data[[i]])
+      print(i)
+    }
   }
 }
 # Randomly sample data
