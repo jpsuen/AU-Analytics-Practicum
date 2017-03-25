@@ -1,8 +1,8 @@
 #######
 #######  NOTE: YOU MUST UPDATE PATH_TO_DATA WITH CORRECT PATH FOR YOUR COMPUTER
 #######  Supports XLSX, CSV, TXT (comma seperated), and sas7bdat file types
-#PATH_TO_DATA = '~/Downloads/data/final2_sampled100.sas7bdat'
-#PATH_TO_DATA = '~/Downloads/data/FINAL2_SAMPLED100.XLSX'
+PATH_TO_DATA = '~/Downloads/data/final2_sampled100.sas7bdat'
+PATH_TO_DATA = '~/Downloads/data/FINAL2_SAMPLED100.XLSX'
 PATH_TO_DATA = '~/Downloads/data/FINAL2_SAMPLED100.csv'
 
 # Dependent Variable Name
